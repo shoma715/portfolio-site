@@ -1,0 +1,62 @@
+.contactContainer {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 30px 40px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  color: #222;
+}
+
+/* 連絡先アイテムを横並びにするためのコンテナ */
+.grid {
+  display: flex;
+  flex-wrap: wrap; /* スマホで折り返す */
+  justify-content: space-around; /* 左右に均等配置 */
+  align-items: center;
+  gap: 20px;
+}
+
+.contactInfo {
+  flex: 1; /* スペースを均等に分ける */
+  min-width: 250px; /* 最小幅 */
+  text-align: center;
+}
+
+.qrCodeContainer {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.emailLink {
+  font-size: 1.1rem;
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: 500;
+  word-break: break-all; /* メールアドレスがはみ出ないように */
+}
+
+.emailLink:hover {
+  text-decoration: underline;
+}
+
+/* Next.jsのImageコンポーネント用のスタイル */
+.qrCodeImage {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}

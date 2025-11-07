@@ -1,0 +1,45 @@
+.skillsContainer {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 30px 40px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  color: #222;
+}
+
+/* スキルカテゴリをグリッド表示にします */
+.grid {
+  display: grid;
+  /* PCでは3列、スマホでは自動で1列になります */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px; /* 各カテゴリ間のスペース */
+}
+
+.categoryTitle {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.listItem {
+  font-size: 1rem;
+  line-height: 1.8; /* リストの行間を少し広めに */
+  color: #444;
+}

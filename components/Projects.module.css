@@ -1,0 +1,66 @@
+.projectsContainer {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 30px 40px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 25px; /* タイトルとカードの間を少し広めに */
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  color: #222;
+}
+
+/* 個々のプロジェクトカード */
+.projectCard {
+  border: 1px solid #e7e7e7;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px; /* カード間のマージン */
+}
+
+/* 最後のカードだけ下のマージンをなくす */
+.projectCard:last-child {
+  margin-bottom: 0;
+}
+
+.projectTitle {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.projectDescription {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* スキルタグのリスト */
+.techList {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* タグが多ければ折り返す */
+  gap: 8px; /* タグ間のスペース */
+}
+
+/* スキルタグ */
+.techItem {
+  display: inline-block;
+  background-color: #eef2f9; /* タグの背景色 */
+  color: #3a5a91; /* タグの文字色 */
+  font-size: 0.85rem; /* 14px */
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 15px; /* 楕円形にする */
+}
