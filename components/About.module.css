@@ -2,12 +2,12 @@
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  padding: 30px 40px; /* 上下30px, 左右40px */
-  margin-bottom: 10px; /* 以前の指示で10pxに変更済み */
+  padding: 30px 40px;
+  margin-bottom: 10px;
 }
 
 .title {
-  font-size: 2rem; /* 32px */
+  font-size: 2rem;
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 20px;
@@ -16,15 +16,11 @@
   color: #222;
 }
 
-/* --- ここから追加・変更 --- */
-
-/* プロフィール一覧 (名前・経歴など) */
 .profileList {
   display: grid;
-  /* 左側（項目名）を100px, 右側（内容）を残り全部にする */
   grid-template-columns: 100px 1fr;
-  gap: 15px 10px; /* 行間 15px, 列間 10px */
-  margin-bottom: 25px; /* リストと挨拶文の間のスペース */
+  gap: 15px 10px;
+  margin-bottom: 25px;
 }
 
 .profileTerm {
@@ -37,22 +33,35 @@
   font-size: 1rem;
   color: #444;
   margin: 0;
-  line-height: 1.6; /* 経歴が複数行になっても読みやすく */
+  line-height: 1.6;
 }
 
-/* 挨拶文の区切り線 */
+/* --- ここから追加 --- */
+/* メールやSNS用のリンクスタイル */
+.textLink {
+  font-size: 1rem;
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.textLink:hover {
+  text-decoration: underline;
+}
+/* --- ここまで追加 --- */
+
 .divider {
   border: 0;
   border-top: 1px solid #eee;
   margin: 25px 0;
 }
 
-/* 挨拶文のテキスト */
 .text {
-  font-size: 1rem; /* 16px */
-  line-height: 1.7; 
+  font-size: 1rem;
+  line-height: 1.7;
   color: #444;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
 }
 
 .text:last-child {

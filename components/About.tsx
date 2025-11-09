@@ -19,6 +19,12 @@ const About = () => {
           2002年 7月 15日
         </dd>
 
+        <dt className={styles.profileTerm}>出身地</dt>
+        <dd className={styles.profileDescription}>
+          {/* ↓ここに情報を記入してください */}
+          大阪府 八尾市
+        </dd>
+
         <dt className={styles.profileTerm}>経歴</dt>
         <dd className={styles.profileDescription}>
           {/* ↓ここに経歴を記入してください (改行は <br /> を使います) */}
@@ -27,6 +33,42 @@ const About = () => {
           2026年 3月 同志社大学 理工学部 インテリジェント情報工学科 卒業予定<br />
           2026年 4月 アクセンチュア株式会社 入社予定<br />
         </dd>
+
+        <dt className={styles.profileTerm}>趣味</dt>
+        <dd className={styles.profileDescription}>
+          {/* ↓ここに趣味・特技を記入してください */}
+          テニス🎾、スノーボード🏂、麻雀🀄
+        </dd>
+
+        <dt className={styles.profileTerm}>電話番号</dt>
+        <dd className={styles.profileDescription}>
+          090-4271-3262
+        </dd>
+
+        <dt className={styles.profileTerm}>メール</dt>
+        <dd className={styles.profileDescription}>
+          {/* classNameをemailLinkからtextLinkに変更 */}
+          <a href="mailto:jagariko0302@gmail.com" className={styles.textLink}>
+            jagariko0302@gmail.com
+          </a>
+        </dd>
+
+        <dt className={styles.profileTerm}>SNS</dt>
+        <dd className={styles.profileDescription}>
+          {/* ↓ LINEの href を、先ほどコピーしたURLに書き換えてください */}
+          <a href="https://line.me/ti/p/ox8jKBnIM9" target="_blank" rel="noopener noreferrer" className={styles.textLink}>
+            LINE
+          </a>
+          {' / '}
+          <a href="https://www.instagram.com/s_takedaaa0715" target="_blank" rel="noopener noreferrer" className={styles.textLink}>
+            Instagram
+          </a>
+          {' / '}
+          <a href="https://www.facebook.com/61579190986153" target="_blank" rel="noopener noreferrer" className={styles.textLink}>
+            Facebook
+          </a>
+        </dd>
+
       </dl>
 
       <hr className={styles.divider} />
