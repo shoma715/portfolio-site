@@ -13,8 +13,11 @@ const Skills = () => {
           <h3 className={styles.categoryTitle}>フロントエンド</h3>
           <ul className={styles.list}>
             <li className={styles.listItem}>React</li>
+            <li className={styles.listItem}>Next.js</li>
+            <li className={styles.listItem}>TypeScript</li>
             <li className={styles.listItem}>JavaScript</li>
             <li className={styles.listItem}>HTML / CSS</li>
+            <li className={styles.listItem}>CSS Modules</li>
           </ul>
         </div>
 
@@ -45,13 +48,15 @@ const Skills = () => {
           </ul>
         </div>
 
-        {/* 基礎・その他 */}
+        {/* その他・ツール */}
         <div>
-          <h3 className={styles.categoryTitle}>基礎・その他</h3>
+          <h3 className={styles.categoryTitle}>その他・ツール</h3>
           <ul className={styles.list}>
-            <li className={styles.listItem}>Java</li>
             <li className={styles.listItem}>C言語</li>
             <li className={styles.listItem}>Git / GitHub</li>
+            <li className={styles.listItem}>VS Code</li>
+            <li className={styles.listItem}>Eclipse</li>
+            <li className={styles.listItem}>npm</li>
           </ul>
         </div>
 
