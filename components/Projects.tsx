@@ -22,7 +22,7 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <section className={styles.projectsContainer}>
+    <section id="projects" className={styles.projectsContainer}>
       <h2 className={styles.title}>Projects</h2>
 
       <div>
