@@ -1,35 +1,43 @@
 .header {
   position: fixed; /* 画面に固定 */
-  top: 20px; /* 画面の上から20px */
-  right: 20px; /* 画面の右から20px */
-  background-color: rgba(255, 255, 255, 0.9); /* 少し透明な白 */
-  backdrop-filter: blur(8px); /* 背景をぼかす（すりガラス効果） */
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* 常に最前面に表示 */
-  padding: 10px 15px;
+  top: 0;
+  left: 0;
+  width: 100%; /* 画面幅いっぱいに */
+  display: flex;
+  justify-content: space-between; /* 両端に寄せる */
+  align-items: center;
+  padding: 20px 40px; /* 上下20px, 左右40px */
+  background-color: rgba(255, 255, 255, 0.7); /* 少し透明な白 */
+  backdrop-filter: blur(10px); /* すりガラス効果 */
+  z-index: 1000;
+  box-sizing: border-box; /* paddingを含めてwidth: 100%にする */
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
 }
 
 .navList {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex; /* ボタンを横並びにする */
-  gap: 10px; /* ボタン間のスペース */
+  display: flex;
+  gap: 20px; /* ボタン間のスペース */
 }
 
 .navLink {
-  display: block;
-  padding: 8px 12px;
   text-decoration: none;
   color: #333;
   font-weight: 500;
   font-size: 0.9rem;
+  padding: 8px 12px;
   border-radius: 6px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .navLink:hover {
   background-color: #f0f0f0;
-  color: #0070f3; /* ホバー時の文字色 */
 }
