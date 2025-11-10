@@ -21,11 +21,25 @@
 }
 
 .label {
-  display: block;
+  display: flex; /* */
+  align-items: center; /* */
   font-weight: 500;
   margin-bottom: 8px;
   color: #333;
 }
+
+/* --- ここから追加 --- */
+.requiredBadge {
+  display: inline-block;
+  background-color: #d90429; /* */
+  color: white;
+  font-size: 0.75rem; /* 12px */
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-left: 10px; /* */
+}
+/* --- ここまで追加 --- */
 
 .input,
 .textarea {
@@ -34,7 +48,7 @@
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 6px;
-  box-sizing: border-box; /* paddingを含めてwidth: 100%にする */
+  box-sizing: border-box; 
   transition: border-color 0.2s;
 }
 
@@ -46,7 +60,7 @@
 
 .textarea {
   min-height: 150px;
-  resize: vertical; /* 縦方向だけリサイズ可能に */
+  resize: vertical; 
 }
 
 .submitButton {
@@ -65,7 +79,6 @@
   background-color: #005bb5;
 }
 
-/* 送信中 */
 .submitButton:disabled {
   background-color: #ccc;
   cursor: not-allowed;

@@ -1,14 +1,13 @@
-"use client";
+"use client"; 
 
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import styles from './Contact.module.css';
 
 const Contact = () => {
-  // ↓↓↓ ステップ1でコピーした "xxxxxxxx" の部分に書き換えてください
+  // ↓↓↓ IDがご自身のものになっているか確認してください
   const [state, handleSubmit] = useForm('xrbrzwng');
 
-  // 送信完了した場合
   if (state.succeeded) {
     return (
       <section id="contact" className={styles.contactContainer}>
@@ -20,7 +19,6 @@ const Contact = () => {
     );
   }
 
-  // フォーム表示
   return (
     <section id="contact" className={styles.contactContainer}>
       <h2 className={styles.title}>Contact</h2>
@@ -30,13 +28,20 @@ const Contact = () => {
         {/* 会社名 */}
         <div className={styles.formGroup}>
           <label htmlFor="company" className={styles.label}>
-            会社名（もしあれば）
+            会社名
+            <span className={styles.requiredBadge}>必須</span> 
           </label>
           <input
             id="company"
             type="text"
             name="company"
             className={styles.input}
+            required 
+          />
+          <ValidationError 
+            prefix="Company" 
+            field="company"
+            errors={state.errors}
           />
         </div>
 
@@ -44,6 +49,7 @@ const Contact = () => {
         <div className={styles.formGroup}>
           <label htmlFor="name" className={styles.label}>
             お名前
+            <span className={styles.requiredBadge}>必須</span> 
           </label>
           <input
             id="name"
@@ -63,6 +69,7 @@ const Contact = () => {
         <div className={styles.formGroup}>
           <label htmlFor="email" className={styles.label}>
             メールアドレス
+            <span className={styles.requiredBadge}>必須</span> 
           </label>
           <input
             id="email"
@@ -82,6 +89,7 @@ const Contact = () => {
         <div className={styles.formGroup}>
           <label htmlFor="message" className={styles.label}>
             お問い合わせ内容
+            <span className={styles.requiredBadge}>必須</span> 
           </label>
           <textarea
             id="message"
