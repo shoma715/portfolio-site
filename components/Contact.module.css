@@ -3,7 +3,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   padding: 30px 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .title {
@@ -16,47 +16,65 @@
   color: #222;
 }
 
-/* 連絡先アイテムを横並びにするためのコンテナ */
-.grid {
-  display: flex;
-  flex-wrap: wrap; /* スマホで折り返す */
-  justify-content: space-around; /* 左右に均等配置 */
-  align-items: center;
-  gap: 20px;
+.formGroup {
+  margin-bottom: 20px;
 }
 
-.contactInfo {
-  flex: 1; /* スペースを均等に分ける */
-  min-width: 250px; /* 最小幅 */
-  text-align: center;
-}
-
-.qrCodeContainer {
-  flex: 1;
-  min-width: 250px;
-  text-align: center;
-}
-
-.subtitle {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.emailLink {
-  font-size: 1.1rem;
-  color: #0070f3;
-  text-decoration: none;
+.label {
+  display: block;
   font-weight: 500;
-  word-break: break-all; /* メールアドレスがはみ出ないように */
+  margin-bottom: 8px;
+  color: #333;
 }
 
-.emailLink:hover {
-  text-decoration: underline;
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box; /* paddingを含めてwidth: 100%にする */
+  transition: border-color 0.2s;
 }
 
-/* Next.jsのImageコンポーネント用のスタイル */
-.qrCodeImage {
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.input:focus,
+.textarea:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+.textarea {
+  min-height: 150px;
+  resize: vertical; /* 縦方向だけリサイズ可能に */
+}
+
+.submitButton {
+  background-color: #0070f3;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submitButton:hover {
+  background-color: #005bb5;
+}
+
+/* 送信中 */
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  color: #2a9d8f;
+  font-weight: 500;
+  background-color: #e0f8f5;
+  padding: 15px;
+  border-radius: 6px;
 }
