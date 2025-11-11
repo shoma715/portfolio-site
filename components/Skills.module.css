@@ -3,7 +3,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   padding: 30px 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .title {
@@ -16,19 +16,17 @@
   color: #222;
 }
 
-/* スキルカテゴリをグリッド表示にします */
 .grid {
   display: grid;
-  /* PCでは3列、スマホでは自動で1列になります */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 25px; /* 各カテゴリ間のスペース */
+  gap: 25px;
 }
 
 .categoryTitle {
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;
   font-weight: 600;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* リストとの余白を調整 */
   color: #111;
 }
 
@@ -38,8 +36,20 @@
   margin: 0;
 }
 
+/* --- ここから修正 --- */
 .listItem {
   font-size: 1rem;
-  line-height: 1.8; /* リストの行間を少し広めに */
   color: #444;
+  display: flex; /* アイコンと文字を横並びにする */
+  align-items: center; /* 上下中央揃え */
+  gap: 10px; /* アイコンと文字の間のスペース */
+  margin-bottom: 12px; /* リスト項目間のスペース */
 }
+
+/* アイコン用のスタイル */
+.icon {
+  font-size: 1.25rem; /* 20px */
+  color: #333; /* アイコンの色 */
+  flex-shrink: 0; /* アイコンが縮まないように */
+}
+/* --- ここまで修正 --- */

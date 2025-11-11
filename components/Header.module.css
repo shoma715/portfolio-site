@@ -11,6 +11,7 @@
   backdrop-filter: blur(10px); /* すりガラス効果 */
   z-index: 1000;
   box-sizing: border-box; /* paddingを含めてwidth: 100%にする */
+  transition: background-color 0.3s ease; /* スクロール開始時に背景色が戻るのをスムーズに */
 }
 
 .logo {
@@ -35,9 +36,23 @@
   font-size: 0.9rem;
   padding: 8px 12px;
   border-radius: 6px;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .navLink:hover {
   background-color: #f0f0f0;
 }
+
+/* --- ここから追加 --- */
+/* アクティブなリンクのスタイル */
+.active {
+  background-color: #0070f3; /* 背景色を青に */
+  color: #ffffff; /* 文字色を白に */
+}
+
+/* ホバー時も色が上書きされるように */
+.active:hover {
+  background-color: #005bb5;
+  color: #ffffff;
+}
+/* --- ここまで追加 --- */
