@@ -23,7 +23,7 @@ const projectsData = [
 const Projects = () => {
   return (
     <section id="projects" className={styles.projectsContainer}>
-      <h2 className={styles.title}>Projects</h2>
+      <h2 className={styles.title}>Works</h2>
 
       <div>
         {/* projectsData配列をmap関数で回して、各プロジェクトをカードとして表示 */}
